@@ -1,0 +1,48 @@
+@import '_minix.scss';
+@import 'common.scss';
+.wrap {
+    height: 100%;
+    width: 100%;
+    @include box_flex;
+    @include direction(column);
+    background: pink;
+}
+
+section {
+    width: 100%;
+    @include flex;
+    font-size: pxTorem(16px);
+    input {
+        height: pxTorem(30px);
+        line-height: pxTorem(30px);
+        display: block;
+        width: 80%;
+        border: pxTorem(1px) solid #ccc;
+        border-radius: pxTorem(10px);
+        margin: pxTorem(10px) auto;
+    }
+    button {
+        display: block;
+        margin: pxTorem(10px) auto;
+        height: pxTorem(30px);
+        width: pxTorem(50px);
+    }
+}
+
+footer {
+    height: pxTorem(50px);
+    width: 100%;
+    @include box_flex;
+    @include align;
+    @include justify(space-around);
+    font-size: pxTorem(14px);
+    dl {
+        text-align: center;
+        dd {
+            img {
+                height: pxTorem(20px);
+                width: pxTorem(20px);
+            }
+        }
+    }
+}
